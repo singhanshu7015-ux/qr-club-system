@@ -3,7 +3,7 @@ import { members } from "./members";
 
 function Home() {
 
-  const baseURL = "http://10.183.125.203"; // 🔥 YOUR IP
+  const baseURL = "https://qr-club-system.vercel.app/"; // 🔥 YOUR IP
 
   return (
     <div style={{
