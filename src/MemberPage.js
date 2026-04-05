@@ -4,63 +4,57 @@ import { members } from "./members";
 
 function MemberPage() {
   const { id } = useParams();
-  const data = members[id];
 
-  if (!data) {
-    return (
-      <h2 style={{ textAlign: "center", marginTop: "50px" }}>
-        Member Not Found
-      </h2>
-    );
+  const member = members[id];
+
+  if (!member) {
+    return <h2 style={{ textAlign: "center" }}>Member not found</h2>;
   }
 
   return (
     <div style={styles.container}>
       <div style={styles.card}>
         
-        {/* PROFILE IMAGE */}
+        {/* ✅ IMAGE */}
         <img
-          src={data.image}
-          alt={data.name}
+          src={member.image}
+          alt={member.name}
           style={styles.image}
         />
 
-        {/* DETAILS */}
-        <h2>{data.name}</h2>
-        <p><b>Department:</b> {data.dept}</p>
-        <p><b>Semester:</b> {data.semester}</p>
-        <p><b>Blood Group:</b> {data.blood}</p>
-        <p><b>Address:</b> {data.address}</p>
+        <h1>{member.name}</h1>
+
+        <p><b>Department:</b> {member.dept}</p>
+        <p><b>Semester:</b> {member.semester}</p>
+        <p><b>Blood Group:</b> {member.blood}</p>
+        <p><b>Address:</b> {member.address}</p>
 
       </div>
     </div>
   );
 }
 
-/* STYLING */
 const styles = {
   container: {
+    height: "100vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
     background: "linear-gradient(to right, purple, blue)",
   },
   card: {
-    background: "#fff",
-    padding: "25px",
+    background: "white",
+    padding: "20px",
     borderRadius: "20px",
     textAlign: "center",
-    width: "320px",
-    boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+    width: "300px",
   },
   image: {
-    width: "140px",
-    height: "140px",
+    width: "150px",
+    height: "150px",
     borderRadius: "50%",
     objectFit: "cover",
-    marginBottom: "15px",
-    border: "4px solid purple",
+    marginBottom: "10px",
   },
 };
 
