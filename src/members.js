@@ -1,8 +1,8 @@
-import anshu from "./images/anshu.jpg";
-import ratan from "./images/ratan.jpg";
-import aadil from "./images/aadil.jpg";
-import astha from "./images/astha.jpg";
-import rahul from "./images/rahul.jpg";
+import anshu from "./images/anshu.jpeg";
+import ratan from "./images/ratan.jpeg";
+import aadil from "./images/aadil.jpeg";
+import astha from "./images/astha.jpeg";
+import rahul from "./images/rahul.jpeg";
 
 export const members = {
   "MEM-001": {
