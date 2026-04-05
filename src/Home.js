@@ -14,7 +14,7 @@ function Home() {
     }}>
 
       <h1 style={{ textAlign: "center" }}>
-        🎓 QR Club Member System
+        UDAAN
       </h1>
 
       <div style={{

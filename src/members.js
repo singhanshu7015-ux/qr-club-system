@@ -1,3 +1,9 @@
+import anshu from "./images/anshu.jpg";
+import ratan from "./images/ratan.jpg";
+import aadil from "./images/aadil.jpg";
+import astha from "./images/astha.jpg";
+import rahul from "./images/rahul.jpg";
+
 export const members = {
   "MEM-001": {
     name: "Anshu Singh",
@@ -5,7 +11,7 @@ export const members = {
     semester: "4th",
     blood: "O+",
     address: "Koni",
-    image: "https://via.placeholder.com/150"
+    image: anshu
   },
 
   "MEM-002": {
@@ -14,7 +20,7 @@ export const members = {
     semester: "1st",
     blood: "A+",
     address: "Koni",
-    image: "https://via.placeholder.com/150"
+    image: ratan
   },
 
   "MEM-003": {  
@@ -23,7 +29,7 @@ export const members = {
     semester: "1st",
     blood: "B+",
     address: "Koni",
-    image: "https://via.placeholder.com/150"
+    image: aadil
   },
 
   
@@ -33,7 +39,7 @@ export const members = {
     semester: "4th",
     blood: "O+",
     address: "Bilaspur",
-    image: "https://via.placeholder.com/150"
+    image: astha
   },
 
   "MEM-005": {
@@ -42,7 +48,7 @@ export const members = {
     semester: "6th",
     blood: "A+",
     address: "Bilaspur",
-    image: "https://via.placeholder.com/150"
+    image: rahul
   }
 
 };
